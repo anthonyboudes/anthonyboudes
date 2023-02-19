@@ -19,7 +19,7 @@
 }
 .content {
   border-radius: 15px;
-    background-image: url(./images/pains.png);
+    background-image: url(pains.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
