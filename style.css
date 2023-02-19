@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    font-family: 'Lobster', cursive;
+}
+.title{
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    top: 20px;
+    font-size: 20pt;
+    background-color: rgb(245, 234, 207);
+    border-radius: 30px;
+    color: rgb(47, 38, 38);
+    width: 90%;
+    max-width: 50vh;
+    z-index: 10;
+    transition: 1s;
+}
+.content {
+  border-radius: 15px;
+    background-image: url(./images/pains.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    
+    height: 98vb;
+    transition: 1s;
+    position: relative;
+    
+   top: 0;
+    
+}
+.accroche {
+    font-size: 60px;
+    position: absolute;
+
+    left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    
+    animation-name: deuxiemephrase;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.accrochedeux {
+    font-size: 60px;
+    position: absolute;
+
+    left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    
+    animation-name: premierephrase;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.contacter {
+    z-index: 10;
+    -webkit-backdrop-filter: blur(15px); /* assure la compatibilité avec safari */
+    backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.347);
+    position: fixed;
+    bottom: 1px;
+    border: 2px solid rgb(20, 143, 195);
+    width: 80%;
+    height: 40px;
+    border-radius: 1000px;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: rgb(62, 62, 62);
+    max-width: 500px;
+    transition: 1s;
+}
+.contacter:hover {
+   color: rgb(20, 195, 52);
+   
+   border: 2px solid rgb(20, 143, 195);
+    bottom: 10px;
+}
+
+
+
+.voiritineraire {
+    z-index: 10;
+    -webkit-backdrop-filter: blur(15px); /* assure la compatibilité avec safari */
+    backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.381);
+    position: fixed;
+    bottom: 50px;
+    border: 2px solid rgb(20, 143, 195);
+    width: 80%;
+    height: 40px;
+    border-radius: 1000px;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: rgb(89, 88, 88);
+    max-width: 500px;
+    transition: 1s;
+}
+
+.voiritineraire:hover {
+    color: rgb(35, 193, 193);
+    
+    bottom: 10px;
+    
+}
+
+
+@media screen and (min-width: 1009px) {
+    .contacter {
+        z-index: 10;
+        -webkit-backdrop-filter: blur(15px); /* assure la compatibilité avec safari */
+    backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.411);
+        position: fixed;
+        bottom: 1px;
+        border: 2px solid rgb(20, 143, 195);
+        width: 80%;
+        height: 50px;
+        border-radius: 1000px;
+        left: 30%;
+        transform:translate(-50%, -50%);
+        font-family: 'Inter', sans-serif;
+        font-size: 30px;
+        color: rgb(77, 77, 77);
+        max-width: 500px;
+        transition: 1s;
+    }
+ 
+}
+@media screen and (min-width: 1009px) {
+    .voiritineraire {
+        z-index: 10;
+        -webkit-backdrop-filter: blur(15px); /* assure la compatibilité avec safari */
+    backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.42);
+        position: fixed;
+        bottom: 1px;
+        border: 2px solid rgb(116, 164, 252);
+        width: 80%;
+        height: 50px;
+        border-radius: 1000px;
+        right: 30%;
+        transform:translate(-0%, -50%);
+        font-family: 'Inter', sans-serif;
+        font-size: 30px;
+        color: rgb(58, 58, 58);
+        max-width: 500px;
+        transition: 1s;
+    }
+   
+}
+@media screen and (max-width: 1009px) {
+    .voiritineraire:hover {
+        bottom: 70px;
+    }
+   
+}
+@media screen and (min-width: 1344px) {
+    .accroche {
+        font-size: 60px;
+        position: absolute;
+    
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: rgb(48, 40, 40);
+        transition: 1s;
+    }
+}
+
+@media screen and (min-width: 1344px) {
+    .accrochedeux {
+        font-size: 60px;
+        position: absolute;
+    
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: rgb(48, 40, 40);
+        transition: 1s;
+    }
+}
+@media screen and (max-width: 1344px) {
+    .accrochedeux {
+        
+        position: absolute;
+    left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+    @keyframes premierephrase {
+        0%{
+            opacity: initial;
+        }
+        40%{
+            opacity: initial;
+        }
+        50% {
+            opacity: 0;
+           }
+           80%{
+            opacity: 0;
+           }
+           100% {
+            opacity: initial;
+           }
+    }
+
+
+    @keyframes deuxiemephrase {
+        0%{
+            opacity: 0;
+        }
+        40%{
+            opacity: 0;
+        }
+        50% {
+            opacity: initial;
+        }
+           80%{
+            opacity: initial;
+           }
+           100% {
+            opacity: 0;
+           }
+    }
+
+.contentdeux {
+    height: 110vh;
+}
+.titlehoraire {
+    font-size: 30pt;
+    position: sticky;
+   background-color: white;
+   border-radius: 10px;
+   width: fit-content;
+    top: 70px;
+    color: rgb(32, 170, 24);
+}
+.texthoraire{
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+}
+.vert {
+    color: green;
+    font-family: 'Inter', sans-serif;
+}
+.rouge {
+    color: red;
+    font-family: 'Inter', sans-serif;
+}
+.titleproduits {
+    font-size: 30pt;
+    
+   background-color: white;
+   border-radius: 10px;
+   width: fit-content;
+    top: 70px;
+    color: rgb(22, 154, 166);
+}
+.croissant {
+    width: 60px;
+    position: relative;
+    top: -85px;
+    left: 80px;
+}
+.textproduits{
+    position: relative;
+    top: -80px;
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+   
+}
+.clock{
+    position: absolute;
+    width: 40px;
+    top: 10px;
+    left: 125px;
+}
+.adresse {
+    width: 40px;
+    position: relative;
+    top: -85px;
+    left: 75px;
+}
+
+.titleadresse {
+    font-size: 30pt;
+    
+   background-color: white;
+   border-radius: 10px;
+   width: fit-content;
+    top: 70px;
+    color: rgb(166, 22, 161);
+}
